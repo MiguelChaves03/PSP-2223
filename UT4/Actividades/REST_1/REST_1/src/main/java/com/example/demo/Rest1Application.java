@@ -39,7 +39,7 @@ public class Rest1Application {
 			
 			if (p1.equals (p2)) {
 				
-				System.out.println ("Ambas personas son iguales");
+				System.out.println ("Las dos personas son iguales");
 				
 			} else {
 				
