@@ -1,4 +1,4 @@
-package com.example.demo.modelo;
+package com.openwebinars.rest.modelo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

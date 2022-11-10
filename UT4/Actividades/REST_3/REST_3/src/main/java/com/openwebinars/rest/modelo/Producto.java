@@ -1,8 +1,9 @@
-package com.example.demo.modelo;
+package com.openwebinars.rest.modelo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
