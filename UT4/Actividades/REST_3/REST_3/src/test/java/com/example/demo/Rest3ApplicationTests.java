@@ -7,10 +7,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith (SpringRunner.class)
 @SpringBootTest
-class Rest3ApplicationTests {
+public class Rest3ApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads () {
+		
 	}
 
 }
