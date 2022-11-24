@@ -11,7 +11,7 @@ public class Comprueba2 implements Runnable {
 	}
 	
 	public void run () {
-		
+				
 		System.out.println ("Hola mundo, " + texto + ", " + Thread.currentThread ().getId ());
 		
 	}
