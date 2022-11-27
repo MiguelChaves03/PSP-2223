@@ -76,8 +76,16 @@ public class Comprueba3 implements Runnable {
             try {
 
                 if (fr != null) {
-                	                    
-                	System.out.println ("El fichero tiene: " + letras + " letras.");
+                	
+                	if (letras == 1) {
+                	
+                    	System.out.println ("El fichero tiene: " + letras + " letra.");
+
+                	} else {
+                		
+                    	System.out.println ("El fichero tiene: " + letras + " letras.");
+
+                	}
                 	
                     fr.close ();
                 	

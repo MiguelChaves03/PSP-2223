@@ -90,8 +90,24 @@ public class Comprueba4 implements Runnable {
             try {
 
                 if (fr != null) {
-                	                    
-                	System.out.println ("El fichero tiene: " + letras + " letras y " + palabras + " palabras.");
+                	
+                	if (palabras == 1) {
+                		
+                		if (letras == 1) {
+                			
+                        	System.out.println ("El fichero tiene: " + letras + " letra y " + palabras + " palabra.");
+
+                		} else {
+                			
+                        	System.out.println ("El fichero tiene: " + letras + " letras y " + palabras + " palabra.");
+                			
+                		}
+                		
+                	} else {
+                		
+                    	System.out.println ("El fichero tiene: " + letras + " letras y " + palabras + " palabras.");
+
+                	}
                 	
                     fr.close ();
 
