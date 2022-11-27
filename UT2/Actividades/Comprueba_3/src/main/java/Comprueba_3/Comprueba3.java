@@ -49,7 +49,11 @@ public class Comprueba3 implements Runnable {
 
                 caract = fr.read ();
                 
-                letras ++;
+                if (caract != ' ') {
+                	
+                    letras ++;
+
+                }
                 
             }
             
