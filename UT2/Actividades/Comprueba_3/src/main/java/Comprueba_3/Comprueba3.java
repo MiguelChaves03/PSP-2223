@@ -57,6 +57,8 @@ public class Comprueba3 implements Runnable {
                 
             }
             
+            System.out.println(caract);
+            
         }
         
         catch (FileNotFoundException e) {
@@ -114,6 +116,8 @@ public class Comprueba3 implements Runnable {
 		for (int i = 0; i < ficheros.length; i ++) {
 			
 			Comprueba3 hilo = new Comprueba3 (ficheros [i]);
+			
+			System.out.println(ficheros [i]);
 			
 			new Thread (hilo).start ();
 						
