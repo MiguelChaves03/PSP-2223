@@ -48,7 +48,7 @@ public class MyHilo extends Thread {
 				
 			}
 			
-			System.out.println ("Fin del hilo.");
+			System.out.println ("FIN DEL HILO");
 
 		} catch (InterruptedException exception) {
 			

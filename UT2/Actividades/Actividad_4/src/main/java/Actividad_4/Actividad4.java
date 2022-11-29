@@ -55,6 +55,8 @@ public class Actividad4 {
 		
 		System.out.println ("CONTADOR:" + hilo.getContador ());
 		
+		System.out.println ("");
+		
 		hilo.pararHilo ();
 		
 	}
