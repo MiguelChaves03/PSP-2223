@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ch.makery.address.controller.Comprueba8">
+    <children>
+        <Button fx:id="btnComenzar" layoutX="220.0" layoutY="35.0" mnemonicParsing="false" onAction="#comenzar"
+                prefHeight="35.0" prefWidth="175.0" text="COMENZAR PROCESO"/>
+        <Button fx:id="btnReanudar1" layoutX="85.0" layoutY="100.0" mnemonicParsing="false" onAction="#reanudar"
+                prefHeight="35.0" prefWidth="175.0" text="REANUDAR"/>
+        <Button fx:id="btnReanudar2" layoutX="355.0" layoutY="100.0" mnemonicParsing="false" onAction="#reanudar"
+                prefHeight="35.0" prefWidth="175.0" text="REANUDAR"/>
+        <Button fx:id="btnSuspender1" layoutX="85.0" layoutY="165.0" mnemonicParsing="false" onAction="#suspender"
+                prefHeight="35.0" prefWidth="175.0" text="SUSPENDER"/>
+        <Button fx:id="btnSuspender2" layoutX="355.0" layoutY="165.0" mnemonicParsing="false" onAction="#suspender"
+                prefHeight="35.0" prefWidth="175.0" text="SUSPENDER"/>
+        <Label fx:id="contador1" alignment="CENTER" layoutX="85.0" layoutY="230.0" prefHeight="30.0" prefWidth="175.0"/>
+        <Label fx:id="contador2" alignment="CENTER" layoutX="355.0" layoutY="230.0" prefHeight="30.0"
+               prefWidth="175.0"/>
+        <Label fx:id="nombre1" alignment="CENTER" layoutX="85.0" layoutY="275.0" prefHeight="25.0" prefWidth="175.0"
+               text="HILO 1"/>
+        <Label fx:id="nombre2" alignment="CENTER" layoutX="355.0" layoutY="275.0" prefHeight="25.0" prefWidth="175.0"
+               text="HILO 2"/>
+        <Button fx:id="btnFinalizar" layoutX="220.0" layoutY="355.0" mnemonicParsing="false" onAction="#finalizar"
+                prefHeight="35.0" prefWidth="175.0" text="FINALIZAR PROCESO"/>
+    </children>
+</AnchorPane>
