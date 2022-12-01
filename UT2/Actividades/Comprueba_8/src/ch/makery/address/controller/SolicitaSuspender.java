@@ -2,7 +2,7 @@ package ch.makery.address.controller;
 
 public class SolicitaSuspender {
 
-    private boolean solicitaSuspender;
+    private boolean solicitaSuspender = false;
 
     public synchronized void set (boolean b) {
 
