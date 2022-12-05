@@ -20,6 +20,16 @@ public class SacarDinero extends Thread {
 			
 			c.RetirarDinero (10, getName ());
 			
+			try {
+				
+				sleep (500);
+				
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace ();
+				
+			}
+			
 		}
 		
 	}

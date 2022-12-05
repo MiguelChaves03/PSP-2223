@@ -15,14 +15,14 @@ public class HiloA extends Thread {
 		
 		synchronized (contador) {
 		
-			for (int i = 0; i < 300; i ++) {
+			for (int i = 0; i < 30; i ++) {
 				
 				contador.incrementar ();
 				
+				System.out.println (getName () + " contador vale " + contador.valor ());
+
 			}
-		
-			System.out.println (getName () + " contador vale " + contador.valor ());
-			
+					
 		}
 		
 	}

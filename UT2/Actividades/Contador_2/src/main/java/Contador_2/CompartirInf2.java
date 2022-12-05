@@ -4,7 +4,7 @@ public class CompartirInf2 {
 
 	public static void main (String [] args) {
 		
-		Contador cont = new Contador (100);
+		Contador cont = new Contador (200);
 		
 		HiloA a = new HiloA ("Hilo A", cont);
 		

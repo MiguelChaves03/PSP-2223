@@ -15,14 +15,14 @@ public class HiloB extends Thread {
 		
 		synchronized (contador) {
 			
-			for (int i = 0; i < 300; i ++) {
+			for (int i = 0; i < 30; i ++) {
 				
 				contador.decrementar ();
 				
+				System.out.println (getName () + " contador vale " + contador.valor ());
+
 			}
-		
-			System.out.println (getName () + " contador vale " + contador.valor ());
-			
+				
 		}
 		
 	}
