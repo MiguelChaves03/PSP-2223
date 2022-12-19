@@ -1,4 +1,4 @@
-package Actividad_10;
+package Productor_Consumidor_V4;
 
 public class Productor extends Thread {
 	
@@ -18,18 +18,20 @@ public class Productor extends Thread {
 		for (int i = 0; i < 5; i ++) {
 			
 			cola.put (i);
-			
+						
 			try {
 				
-				sleep (100);
+				sleep (500);
 				
-			} catch (InterruptedException e) {
+				System.out.print ("PING ");
+				
+				sleep (500);
+				
+				System.out.print ("PONG ");
 
-				e.printStackTrace ();
+			} catch (InterruptedException e) {
 				
 			}
-			
-			System.out.println (i + " -> PRODUCTOR:  " + n + ", PRODUCE: " + i);
 			
 		}
 		

@@ -1,4 +1,4 @@
-package Productor_Consumidor_V3;
+package Productor_Consumidor_V4;
 
 public class Cola {
 	
@@ -6,18 +6,14 @@ public class Cola {
 	
 	private boolean disponible = false;
 	
-	private int turno = 1;
-		
 	public synchronized int get () {
 		
 		while (!disponible) {
 			
-			
-			
 			try {
 				
 				wait ();
-																
+				
 			} catch (InterruptedException e) {
 				
 			}
@@ -25,7 +21,7 @@ public class Cola {
 		}
 		
 		disponible = false;
-				
+		
 		notify ();
 				
 		return numero;
@@ -37,15 +33,15 @@ public class Cola {
 		while (disponible) {
 			
 			try {
-								
+				
 				wait ();
-
+				
 			} catch (InterruptedException e) {
 				
 			}
 			
 		}
-				
+		
 		numero = valor;
 		
 		disponible = true;

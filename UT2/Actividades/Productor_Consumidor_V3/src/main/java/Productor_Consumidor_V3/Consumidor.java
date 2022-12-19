@@ -20,7 +20,9 @@ public class Consumidor extends Thread {
 		for (int i = 0; i < 5; i ++) {
 			
 			valor = cola.get ();
-						
+
+			System.out.println (i + " -> CONSUMIDOR: " + n + ", CONSUME: " + valor);
+			
 		}
 		
 	}

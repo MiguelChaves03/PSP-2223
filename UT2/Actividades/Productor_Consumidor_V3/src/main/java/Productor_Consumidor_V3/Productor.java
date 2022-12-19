@@ -18,16 +18,16 @@ public class Productor extends Thread {
 		for (int i = 0; i < 5; i ++) {
 			
 			cola.put (i);
-						
+			
+			System.out.println (i + " -> PRODUCTOR:  " + n + ", PRODUCE: " + i);
+			
 			try {
 				
-				System.out.print (" PING ");
+				sleep (100);
 				
-				sleep (300);
-				
-				System.out.print (" PONG ");
-
 			} catch (InterruptedException e) {
+
+				e.printStackTrace ();
 				
 			}
 			

@@ -5,7 +5,7 @@ public class Cola {
 	private int numero;
 	
 	private boolean disponible = false;
-	
+		
 	public synchronized int get () {
 		
 		while (!disponible) {
@@ -13,7 +13,7 @@ public class Cola {
 			try {
 				
 				wait ();
-				
+																
 			} catch (InterruptedException e) {
 				
 			}
@@ -21,11 +21,9 @@ public class Cola {
 		}
 		
 		disponible = false;
-		
+				
 		notify ();
-		
-		System.out.println ("\tSE CONSUME: " + numero);
-		
+				
 		return numero;
 
 	}
@@ -35,23 +33,21 @@ public class Cola {
 		while (disponible) {
 			
 			try {
-				
+								
 				wait ();
-				
+
 			} catch (InterruptedException e) {
 				
 			}
 			
 		}
-		
+				
 		numero = valor;
 		
 		disponible = true;
 		
 		notify ();
-		
-		System.out.println ("SE PRODUCE: " + numero);
-		
+				
 	}
 
 }

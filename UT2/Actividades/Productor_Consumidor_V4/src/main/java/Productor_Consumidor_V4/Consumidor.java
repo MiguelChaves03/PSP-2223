@@ -1,4 +1,4 @@
-package Actividad_10;
+package Productor_Consumidor_V4;
 
 public class Consumidor extends Thread {
 	
@@ -20,9 +20,7 @@ public class Consumidor extends Thread {
 		for (int i = 0; i < 5; i ++) {
 			
 			valor = cola.get ();
-
-			System.out.println (i + " -> CONSUMIDOR: " + n + ", CONSUME: " + valor);
-			
+						
 		}
 		
 	}
